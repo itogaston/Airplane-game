@@ -62,11 +62,8 @@ body {
 }
 
 .object {
-  zoom: 25%;
-}
-
-.img-128 {
-  zoom: 0%;
+  width: 128px;
+  height: 128px;
 }
 
 .object-name{
