@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  resize: none;
+}
+body {
+  overflow: hidden;
+}
+
+#container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.airplane {
+  /* padding: 2px; */
+  /* width: 100px;
+  height: 100px; */
+  position: absolute;
+}
+
+/* You lose */
+
+#loser-container {
+  font-family: 'Press Start 2P', cursive;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.retry-btn{
+  zoom: 25%;
+  margin-bottom: 100%;
+}
+
+#record-text{
+  font-size: larger;
+  margin-top: 100%;
+}
+
+/* Objects */
+
+#object-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 200px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#object-container > * {
+  max-width: 200px;
+  text-align: center;
+}
+
+.object {
+  zoom: 25%;
+}
+
+.img-128 {
+  zoom: 0%;
+}
+
+.object-name{
+  margin-bottom: 20px;
+}
+
+.object-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spinning {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+.spin {
+  animation-name: spinning;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: linear;
+}
