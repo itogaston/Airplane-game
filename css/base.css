@@ -37,7 +37,8 @@ body {
 }
 
 .retry-btn{
-  zoom: 25%;
+  width: 128px;
+  height: 128px;
   margin-bottom: 100%;
 }
 

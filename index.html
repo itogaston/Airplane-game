@@ -596,8 +596,14 @@
             retryBtn.src = "assets/retry.png"
             retryBtn.classList += "retry-btn"
 
-            retryBtn.onmouseover = () => retryBtn.style.zoom = "23%"
-            retryBtn.onmouseout = () => retryBtn.style.zoom = "25%"
+            retryBtn.onmouseover = () => {
+                retryBtn.style.width = "118px";
+                retryBtn.style.height = "118px";
+            }
+            retryBtn.onmouseout = () => {
+                retryBtn.style.width = "128px";
+                retryBtn.style.height = "128px"
+            }
 
             retryBtn.onclick = () => {
                 container.innerHTML = ""
