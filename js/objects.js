@@ -359,7 +359,7 @@ function reset_objs() {
 function create_obj_img(obj) {
 
     var object = document.createElement("img")
-    object.src = "/assets/objects/" + obj.img
+    object.src = "assets/objects/" + obj.img
 
     object.classList += "object "
 
