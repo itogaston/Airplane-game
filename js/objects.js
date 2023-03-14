@@ -233,7 +233,7 @@ var objects = [
         id: 20,
         name: "Tourist Seasson",
         text: "Anyone who needs more than one suitcase is a tourist, not a traveler",
-        img: "Tourist.png",
+        img: "tourist.png",
         level: 1,
         used: false,
         reusable: true,

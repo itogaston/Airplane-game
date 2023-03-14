@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="css/clouds.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="shortcut icon" href="assets/airport.svg" type="image/x-icon">
-<meta name="viewport" content="width=device-width, height=device-height, viewport-fit=cover, user-scalable:no">
+<meta name="viewport" content="width=device-width, height=device-height, viewport-fit=cover, minimum-scale=1 user-scalable:no">
 <script src="js/clouds.js"></script>
 <script src="js/objects.js"></script>
 <script src="js/airplane.js"></script>
@@ -29,9 +29,6 @@
         resizeClouds(height)
 
         console.log("width, height", width, height);
-        let container = document.getElementById("container")
-        container.style.width = width + "px"
-        container.style.height = height + "px"
 
         var image_size = 100;
 

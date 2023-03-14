@@ -715,10 +715,7 @@ function getHeight() {
 function windowResize(ev) {
     var width = getWidth()
     var height = getHeight()
-    console.log("width, height", width, height);
-    let container = document.getElementById("container")
-    container.style.width = width + "px"
-    container.style.height = height + "px"
+    
     resizeClouds(height)
 }
 function prefetchRetry(){
