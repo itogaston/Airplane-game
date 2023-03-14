@@ -228,3 +228,12 @@ body {
   animation-duration: 83s;
   margin-left: 51%;
 }
+
+@media (width < 500px) {
+  .cloud.large {
+    -moz-transform: scale(3, 3);
+    -ms-transform: scale(3, 3);
+    -webkit-transform: scale(3, 3);
+    transform: scale(3, 3);
+  }
+}

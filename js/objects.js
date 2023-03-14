@@ -7,7 +7,7 @@ var objects = [
         modification: () => { delay -= 15 },
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         //reusable: false,
         credit: '<a href="https://www.flaticon.com/free-icons/disco" title="disco icons">Disco icons created by Freepik - Flaticon</a>'
     },
@@ -19,7 +19,7 @@ var objects = [
         modification: () => { image_size -= 30 },
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         credit: '<a href="https://www.flaticon.com/free-icons/vaccine" title="vaccine icons">Vaccine icons created by Freepik - Flaticon</a>'
     },
     {
@@ -30,7 +30,7 @@ var objects = [
         modification: () => { points += 50 },
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         //reusable: false,
         credit: '<a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Freepik - Flaticon</a>'
     },
@@ -79,7 +79,7 @@ var objects = [
         modification: () => { points += 100 },
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         //reusable: false,
         credit: '<a href="https://www.flaticon.com/free-icons/toad" title="toad icons">Toad icons created by max.icons - Flaticon</a>'
     },
@@ -91,7 +91,7 @@ var objects = [
         modification: () => { sinuosity += 1 },
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         //reusable: false,
         credit: '<a href="https://www.flaticon.com/free-icons/original-sin" title="original-sin icons">Original-sin icons created by Smashicons - Flaticon</a>'
     },
@@ -101,10 +101,10 @@ var objects = [
         text: "We going bankrupt",
         img: "coronavirus.png",
         modification: () => { enemies = Math.floor(enemies * 0.60) },
-        level: 6,
+        level: 4,
         // level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         //reusable: false,
         credit: '<a href="https://www.flaticon.com/free-icons/virus" title="virus icons">Virus icons created by Freepik - Flaticon</a>'
     },
@@ -123,10 +123,10 @@ var objects = [
             points = randomi(points * (1 - luck), points * (1 + luck));
             degrees = randomi(30, 360);
         },
-        level: 6,
+        level: 4,
         // level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         //reusable: false,
         credit: '<a href="https://www.flaticon.com/free-icons/dice" title="dice icons">Dice icons created by juicy_fish - Flaticon</a>'
     },
@@ -135,9 +135,9 @@ var objects = [
         name: "Random Zoom",
         text: "It's a big small world",
         img: "glass.png",
-        level: 6,
+        level: 4,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { image_size = randomi(image_size * 0.20, image_size * 1.8) },
         credit: '<a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Dimitry Miroliubov - Flaticon</a>'
     },
@@ -148,7 +148,7 @@ var objects = [
         img: "switch.png",
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { degrees -= 180 },
         credit: '<a href="https://www.flaticon.com/free-icons/reset" title="reset icons">Reset icons created by Freepik - Flaticon</a>'
     },
@@ -168,9 +168,9 @@ var objects = [
         name: "Christmas Tree",
         text: "It's that time of the year...",
         img: "christmas-tree.png",
-        level: 6,
+        level: 4,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { enemies *= 1.75 },
         credit: '<a href="https://www.flaticon.com/free-icons/sale" title="sale icons">Sale icons created by Pixel perfect - Flaticon</a>'
     },
@@ -181,7 +181,7 @@ var objects = [
         img: "airbus.png",
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { image_size += 30 },
         credit: '<a href="https://www.flaticon.com/free-icons/aerospace" title="aerospace icons">Aerospace icons created by balan - Flaticon</a>'
     },
@@ -192,7 +192,7 @@ var objects = [
         img: "long-distance.png",
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { points += 200 },
         credit: '<a href="https://www.flaticon.com/free-icons/long-distance" title="long-distance icons">Long-distance icons created by iconixar - Flaticon</a>'
     },
@@ -201,9 +201,9 @@ var objects = [
         name: "Fuel Leak",
         text: "Kerosene all over the place",
         img: "leak.png",
-        level: 6,
+        level: 4,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { delay *= 1.10 },
         credit: '<a href="https://www.flaticon.com/free-icons/leak" title="leak icons">Leak icons created by Freepik - Flaticon</a>'
     },
@@ -212,9 +212,9 @@ var objects = [
         name: "Extra Fuel",
         text: "Oil they would buy from anyone, even from Satan",
         img: "petroleum.png",
-        level: 6,
+        level: 4,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { delay *= 0.75 },
         credit: '<a href="https://www.flaticon.com/free-icons/petroleum" title="petroleum icons">Petroleum icons created by Freepik - Flaticon</a>'
     },
@@ -225,7 +225,7 @@ var objects = [
         img: "luggage.png",
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { delay += 5 },
         credit: '<a href="https://www.flaticon.com/free-icons/travel" title="travel icons">Travel icons created by Freepik - Flaticon</a>'
     },
@@ -236,7 +236,7 @@ var objects = [
         img: "tourist.png",
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { enemies += 3 },
         credit: '<a href="https://www.flaticon.com/free-icons/summer" title="summer icons">Summer icons created by Eucalyp - Flaticon</a>'
     },
@@ -247,7 +247,7 @@ var objects = [
         img: "highway.png",
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { spawn += 1 },
         credit: '<a href="https://www.flaticon.es/iconos-gratis/la-carretera" title="la carretera iconos">La carretera iconos creados por DinosoftLabs - Flaticon</a>'
     },
@@ -256,9 +256,9 @@ var objects = [
         name: "Artificial Inteligence",
         text: "The question of whether a computer can think is no more interesting than the question of whether a submarine can swim",
         img: "inteligencia-artificial.png",
-        level: 6,
+        level: 4,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { enemies -= 3; points *= 1.1 },
         credit: '<a href="https://www.flaticon.es/iconos-gratis/cerebro" title="cerebro iconos">Cerebro iconos creados por Freepik - Flaticon</a>'
     },
@@ -267,9 +267,9 @@ var objects = [
         name: "Robot Eye",
         text: "Do not apologize for crying. Without this emotion, we are only robots",
         img: "robot-eye.png",
-        level: 6,
+        level: 4,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { degrees += 45; delay -= 5 },
         credit: '<a href="https://www.flaticon.es/iconos-gratis/inteligencia-artificial" title="inteligencia artificial iconos">Inteligencia artificial iconos creados por Freepik - Flaticon</a>'
     },
@@ -280,7 +280,7 @@ var objects = [
         img: "v.png",
         level: 1,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { degrees = 60 },
         credit: '<a href="https://www.flaticon.com/free-icons/v" title="v icons">V icons created by Freepik - Flaticon</a>'
     },
@@ -289,9 +289,9 @@ var objects = [
         name: "THC",
         text: "I don't do drugs. I am drugs.",
         img: "thc.png",
-        level: 6,
+        level: 4,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { delay *= 2.0; enemies += 5; points += 200; image_size -= 25 },
         credit: '<a href="https://www.flaticon.com/free-icons/thc" title="thc icons">Thc icons created by Freepik - Flaticon</a>'
     },
@@ -300,9 +300,9 @@ var objects = [
         name: "Speed Ball",
         text: "A weird combination",
         img: "SpeedBall.png",
-        level: 6,
+        level: 4,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { delay *= 0.4; enemies -= 1; image_size += 10 },
         credit: '<a href="https://www.flaticon.com/free-icons/syringe" title="syringe icons">Syringe icons created by iconixar - Flaticon</a>'
     },
@@ -312,9 +312,9 @@ var objects = [
         text: "20 / 20",
         img: "perfect-vision.png",
         img_class: "img-128",
-        level: 6,
+        level: 4,
         used: false,
-        reusable: true,
+        reusable: false,
         modification: () => { degrees = 180; enemies += 2; spawn += 1 },
         credit: '<a href="https://www.flaticon.com/free-icons/vr-glass" title="vr glass icons">Vr glass icons created by Paul J. - Flaticon</a>'
     },
@@ -487,3 +487,6 @@ function blurryVision(active) {
     }, 5000)
 
 }
+
+let a = []
+a.shift()

@@ -6,7 +6,11 @@
 html, body {
   height: 100%;
   resize: none;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  position: relative;
 }
+
 body {
   overflow: hidden;
 }
@@ -103,6 +107,7 @@ body {
   #object-container{
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
   }
 
   #loser-container{
