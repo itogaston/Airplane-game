@@ -143,9 +143,9 @@ var objects = [
     },
     {
         id: 12,
-        name: "Uno Reverse",
+        name: "Reverse",
         text: "Now it's counter clockwise",
-        img: "Uno_Reverse_Card.webp",
+        img: "switch.png",
         level: 1,
         used: false,
         reusable: true,
@@ -348,6 +348,9 @@ var objects = [
 
 ]
 
+var randomObj1;
+var randomObj2;
+
 function randomi(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
@@ -367,9 +370,14 @@ function create_obj_img(obj) {
         object.classList += obj.img_class
     }
 
-    object.onmouseover = () => object.style.transform = "scale(0.95)"
-    object.onmouseout = () => object.style.transform = "scale(1)"
-
+    object.onmouseover = () => {
+        object.style.width = "118px";
+        object.style.height = "118px";
+    }
+    object.onmouseout = () => {
+        object.style.width = "128px";
+        object.style.height = "128px"
+    }
     var first = false
     object.onclick = () => {
         if (!first) {
@@ -419,7 +427,7 @@ function create_obj(obj) {
     object_text.innerText = obj.text
     object_text.style.visibility = "hidden"
 
-    const img = create_obj_img(obj)
+    const img = obj.imgHtml
 
     div.appendChild(object_name)
     div.appendChild(object_text)
@@ -434,6 +442,14 @@ function display_objects() {
 
     var container = document.querySelector("#object-container")
 
+    const object1 = create_obj(randomObj1)
+    const object2 = create_obj(randomObj2)
+
+    container.appendChild(object1)
+    container.appendChild(object2)
+}
+
+function select_objects(){
     var notUsedObjects = objects.filter(obj => (obj.level <= level) && (!obj.used || obj.reusable))
     if (notUsedObjects.length < 2) {
         console.log("empty -> reset");
@@ -441,18 +457,17 @@ function display_objects() {
     }
 
     do {
-        var randomObj1 = notUsedObjects[Math.floor(Math.random() * notUsedObjects.length)]
-        var randomObj2 = notUsedObjects[Math.floor(Math.random() * notUsedObjects.length)]
+        randomObj1 = notUsedObjects[Math.floor(Math.random() * notUsedObjects.length)]
+        randomObj2 = notUsedObjects[Math.floor(Math.random() * notUsedObjects.length)]
         // var randomObj1 = notUsedObjects[notUsedObjects.length - 1]
         // var randomObj2 = notUsedObjects[notUsedObjects.length - 2]
 
     } while (randomObj1.id == randomObj2.id);
 
-    const object1 = create_obj(randomObj1)
-    const object2 = create_obj(randomObj2)
-
-    container.appendChild(object1)
-    container.appendChild(object2)
+    
+    randomObj1.imgHtml = create_obj_img(randomObj1)
+    randomObj2.imgHtml = create_obj_img(randomObj2)
+    
 }
 
 function blurryVision(active) {
