@@ -134,9 +134,16 @@ body {
   padding: 1em;
 }
 
+#new-game{
+  padding: 15px;
+  position: absolute;
+  left: calc(50% - 79px);
+  top: 50%;
+}
+
 /* Media */
 
-@media (width < 500px) {
+@media (550px > width) {
   .object{
     width: 100px;
     height: 100px;
@@ -162,7 +169,7 @@ body {
   }
 }
 
-@media (600px >= width >= 500px) {  
+@media (600px >= width >= 550px) {  
   #object-container{
     justify-content: space-evenly;
     align-items: center;
@@ -177,5 +184,11 @@ body {
   #object-container{
     justify-content: space-evenly;
     align-items: center;
+  }
+}
+
+@supports (-moz-appearance:none) {
+  #new-game{
+    left: calc(50% - 71px);
   }
 }
