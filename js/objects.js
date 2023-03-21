@@ -221,7 +221,7 @@ var objects = [
     {
         id: 19,
         name: "Extra Lugagge",
-        text: "It won't be cheap",
+        text: "Heavy bags on my shoulders weigh. As I trudge through the streets all day",
         img: "luggage.png",
         level: 1,
         used: false,
@@ -243,7 +243,7 @@ var objects = [
     {
         id: 21,
         name: "Wider Roads",
-        text: "And her eyes were on the highway, where life whizzed by",
+        text: "Rivers of steel flowing endlessly",
         img: "highway.png",
         level: 1,
         used: false,
@@ -254,7 +254,7 @@ var objects = [
     {
         id: 22,
         name: "Artificial Inteligence",
-        text: "The question of whether a computer can think is no more interesting than the question of whether a submarine can swim",
+        text: "Also known as statistics",
         img: "inteligencia-artificial.png",
         level: 4,
         used: false,
@@ -276,7 +276,7 @@ var objects = [
     {
         id: 24,
         name: "V for vendetta",
-        text: "Behind this mask there is more than just flesh. Beneath this mask there is an idea... and ideas are bulletproof",
+        text: "Ideas are bulletproof",
         img: "v.png",
         level: 1,
         used: false,
@@ -287,7 +287,7 @@ var objects = [
     {
         id: 25,
         name: "THC",
-        text: "I don't do drugs. I am drugs.",
+        text: "I don't do drugs. I am drugs",
         img: "thc.png",
         level: 4,
         used: false,
@@ -373,10 +373,12 @@ function create_obj_img(obj) {
     object.onmouseover = () => {
         object.style.width = "118px";
         object.style.height = "118px";
+        object.style.margin = "5px";
     }
     object.onmouseout = () => {
         object.style.width = "128px";
         object.style.height = "128px"
+        object.style.margin = "0px";
     }
     var first = false
     object.onclick = () => {
@@ -461,7 +463,6 @@ function select_objects(){
         randomObj2 = notUsedObjects[Math.floor(Math.random() * notUsedObjects.length)]
         // var randomObj1 = notUsedObjects[notUsedObjects.length - 1]
         // var randomObj2 = notUsedObjects[notUsedObjects.length - 2]
-
     } while (randomObj1.id == randomObj2.id);
 
     

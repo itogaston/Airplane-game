@@ -608,7 +608,7 @@ function newGame(n = 2) {
         console.log(level, planes);
         console.log("config", getConfig())
 
-        setTimeout(()=>move_planes(planes), 500)
+        setTimeout(() => move_planes(planes), 500)
     })
 }
 
@@ -667,6 +667,19 @@ function resetGame() {
     newGame(enemies)
 }
 
+function startTuto(){
+
+}
+
+function endTuto(){
+    var container = document.querySelector("#container")
+    container.innerHTML = ""
+
+    planes = []
+
+    newGame()
+}
+
 function getConfig() {
     return {
         enemies: enemies,
@@ -715,18 +728,19 @@ function getHeight() {
 function windowResize(ev) {
     var width = getWidth()
     var height = getHeight()
-    
+
     resizeClouds(height)
 }
-function prefetchRetry(){
+function prefetchImgs() {
     var img = new Image();
-    img.src='assets/retry.png';
+    img.src = 'assets/retry.png';
+    let airplane_prefetch = new Image()
+    airplane_prefetch.src = "assets/airport.svg"
+    let explotion_prefetch = new Image()
+    explotion_prefetch.src = "assets/explotion.gif"
+    let papeplane_prefetch = new Image()
+    papeplane_prefetch.src = "assets/paper-plane.png"
 }
 
-let airplane_prefetch = new Image()
-airplane_prefetch.src =  "assets/airport.svg"
-let explotion_prefetch = new Image()
-explotion_prefetch.src = "assets/explotion.gif"
-let papeplane_prefetch = new Image()
-papeplane_prefetch.src =  "assets/paper-plane.png"
+
 

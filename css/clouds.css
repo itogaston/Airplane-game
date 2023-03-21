@@ -131,12 +131,12 @@ body {
 }
 
 .cloud-2 {
-  -webkit-animation-duration: 99s;
-  -moz-animation-duration: 99s;
-  -ms-animation-duration: 99s;
-  -o-animation-duration: 99s;
-  animation-duration: 99s;
-  margin-left: 90%;
+  -webkit-animation-duration: 110s;
+  -moz-animation-duration: 110s;
+  -ms-animation-duration: 110s;
+  -o-animation-duration: 110s;
+  animation-duration: 110s;
+  margin-left: 100%;
 }
 
 .cloud-3 {
@@ -145,25 +145,25 @@ body {
   -ms-animation-duration: 142s;
   -o-animation-duration: 142s;
   animation-duration: 142s;
-  margin-left: 50%;
+  margin-left: 150%;
 }
 
 .cloud-4 {
-  -webkit-animation-duration: 152s;
-  -moz-animation-duration: 152s;
-  -ms-animation-duration: 152s;
-  -o-animation-duration: 152s;
-  animation-duration: 152s;
-  margin-left: 43%;
+  -webkit-animation-duration: 90s;
+  -moz-animation-duration: 90s;
+  -ms-animation-duration: 90s;
+  -o-animation-duration: 90s;
+  animation-duration: 90s;
+  margin-left: 143%;
 }
 
 .cloud-5 {
-  -webkit-animation-duration: 100s;
-  -moz-animation-duration: 100s;
-  -ms-animation-duration: 100s;
-  -o-animation-duration: 100s;
-  animation-duration: 100s;
-  margin-left: 83%;
+  -webkit-animation-duration: 110s;
+  -moz-animation-duration: 110s;
+  -ms-animation-duration: 110s;
+  -o-animation-duration: 110s;
+  animation-duration: 110s;
+  margin-left: 193%;
 }
 
 .cloud-6 {
@@ -181,7 +181,7 @@ body {
   -ms-animation-duration: 109s;
   -o-animation-duration: 109s;
   animation-duration: 109s;
-  margin-left: 69%;
+  margin-left: 169%;
 }
 
 .cloud-8 {
@@ -190,7 +190,7 @@ body {
   -ms-animation-duration: 121s;
   -o-animation-duration: 121s;
   animation-duration: 121s;
-  margin-left: 100%;
+  margin-left: 170%;
 }
 
 .cloud-9 {
@@ -199,7 +199,7 @@ body {
   -ms-animation-duration: 101s;
   -o-animation-duration: 101s;
   animation-duration: 101s;
-  margin-left: 10%;
+  margin-left: 110%;
 }
 
 .cloud-10 {
@@ -208,7 +208,7 @@ body {
   -ms-animation-duration: 126s;
   -o-animation-duration: 126s;
   animation-duration: 126s;
-  margin-left: 14%;
+  margin-left: 134%;
 }
 
 .cloud-11 {
@@ -217,7 +217,7 @@ body {
   -ms-animation-duration: 96s;
   -o-animation-duration: 96s;
   animation-duration: 96s;
-  margin-left: 73%;
+  margin-left: 173%;
 }
 
 .cloud-12 {
@@ -226,7 +226,7 @@ body {
   -ms-animation-duration: 83s;
   -o-animation-duration: 83s;
   animation-duration: 83s;
-  margin-left: 51%;
+  margin-left: 151%;
 }
 
 @media (width < 500px) {
