@@ -488,6 +488,3 @@ function blurryVision(active) {
     }, 5000)
 
 }
-
-let a = []
-a.shift()

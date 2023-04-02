@@ -741,6 +741,3 @@ function prefetchImgs() {
     let papeplane_prefetch = new Image()
     papeplane_prefetch.src = "assets/paper-plane.png"
 }
-
-
-
